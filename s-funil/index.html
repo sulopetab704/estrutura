@@ -15,6 +15,17 @@
         }
     </style>
     <script>
+    (function() {
+    if (window.history && window.history.pushState) {
+        window.history.pushState('forward', null, window.location.href);
+
+        window.onpopstate = function() {
+            window.location.href = 'https://suachanceunicahoje.com/up';
+        };
+    }
+})();
+    </script>
+    <script>
         // Função para obter parâmetros UTM da URL
         function getUTMParameters() {
             var utmParams = {};
